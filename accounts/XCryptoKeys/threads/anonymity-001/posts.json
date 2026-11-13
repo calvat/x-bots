@@ -26,7 +26,10 @@
       "sub": "A single KYC withdrawal or shop order can reveal all past payments and counterparties."
     },
     "source": "https://en.bitcoin.it/wiki/Privacy",
-    "status": "checked"
+    "status": "posted",
+    "posted_at": "2026-11-13T22:00:01Z",
+    "tweet_id": "2121362473387209123",
+    "url": "https://x.com/xcryptokeys/status/2121362473387209123"
   },
   {
     "index": 3,
