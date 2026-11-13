@@ -26,7 +26,10 @@
       "sub": "128 to 256 bits of entropy plus a checksum, cut into 11-bit word indexes."
     },
     "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki",
-    "status": "checked"
+    "status": "posted",
+    "posted_at": "2026-11-13T20:30:01Z",
+    "tweet_id": "2121339823705161758",
+    "url": "https://x.com/xcryptokeys/status/2121339823705161758"
   },
   {
     "index": 3,
