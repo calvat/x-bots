@@ -42,7 +42,10 @@
       "sub": "All the math runs modulo a 78-digit prime, p = 2^256 - 2^32 - 977."
     },
     "source": "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki",
-    "status": "checked"
+    "status": "posted",
+    "posted_at": "2026-11-14T11:30:01Z",
+    "tweet_id": "2121566314791649529",
+    "url": "https://x.com/xcryptokeys/status/2121566314791649529"
   },
   {
     "index": 4,
