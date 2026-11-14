@@ -281,7 +281,7 @@ public class PublisherTests
     }
 
     [Fact]
-    public void Real_campaigns_all_fit_in_280_with_their_hashtag()
+    public void Real_campaigns_all_fit_in_500_with_their_hashtag()
     {
         // Vérifie le vrai dépôt quand le test tourne depuis src/ du dépôt.
         string? dir = AppContext.BaseDirectory;
@@ -295,7 +295,7 @@ public class PublisherTests
             if (string.IsNullOrWhiteSpace(c.Hashtag)) problems.Add($"{a.Name}/{c.Name}: pas de hashtag");
             foreach (var post in c.Posts.OfType<JsonObject>())
             {
-                var (text, error) = Publisher.BuildText(post, "simple", c.Hashtag, 280);
+                var (text, error) = Publisher.BuildText(post, "simple", c.Hashtag, 500);
                 if (text is null) problems.Add($"{a.Name}/{c.Name} #{post["index"]}: {error}");
             }
         }

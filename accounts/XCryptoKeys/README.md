@@ -8,23 +8,24 @@ Posts et threads préparés pour le compte X **@xcryptokeys** : blockchains et c
 |---|---|
 | `SUJETS.md` | Les 10 sujets, leurs préfixes et l'ordre de rédaction |
 | `STYLE.md` | Les règles de rédaction de chaque post |
-| `STYLE-GRAPHIQUE.md` | Le style des illustrations (palette, polices, composition) |
+| `STYLE-GRAPHIQUE.md` | Le style et les règles des illustrations (varier, coller au post, jamais deux fois la même dans une campagne) |
 | `reference-banner.png` | La bannière du compte, référence du style graphique |
 | `account.json` | Le compte pour le bot : `enabled` (`false` = rien n'est publié) et `x.username` (nom sur X, `xcryptokeys`). Jamais de clés ici |
 | `account.local.json` | Les 4 clés de l'API X du compte, **sur le serveur seulement** : à créer à partir de `account.local.example.json`. Ignoré par git, jamais commité |
-| `card.json` | Signature et préfixes utilisés par `design/card.py` (à la racine du dépôt) pour générer les cartes |
-| `threads/` | Un dossier par campagne, nommé `<nom technique>-<numéro sur 3 chiffres>` : par exemple `threads/pactus-001/` pour la 1re campagne Pactus. Il contient `index.md` (description de la campagne), `posts.json` (les posts) et `status.json` (où en est la publication) |
+| `card.json` | Signature et préfixes utilisés par `design/diagram.py` et `design/card.py` (à la racine du dépôt) pour générer les images |
+| `threads/` | Un dossier par campagne, nommé `<nom technique>-<numéro sur 3 chiffres>` : par exemple `threads/pactus-001/` pour la 1re campagne Pactus. Il contient `index.md` (description de la campagne), `posts.json` (les posts), `status.json` (où en est la publication) `hooks/` (les accroches : au moins 5 réponses pour faire connaître le thread, une image chacune) |
 | `threads/_template/` | Le modèle à copier pour une nouvelle campagne |
 
 Le programme qui publie les posts est commun à tous les comptes : il est dans `src/` à la racine du dépôt (voir [`src/README.md`](../../src/README.md)).
 
 ## Règles clés (détails dans `STYLE.md`)
 
-- **30 à 100 posts** par thread, **1 post par thread et par jour**, en **anglais**, **moins de 280 caractères**, **une info technique** par post.
+- **30 à 100 posts** par thread, **1 post par thread et par jour**, en **anglais**, **500 caractères maximum** (compte X Premium), l'accroche dans les ~250 premiers, **une info technique** par post.
 - Technique mais compréhensible par un non-développeur.
 - **2 versions minimum par post** (a simple, b tech, parfois c) : Johan choisit au moment de publier.
 - Un **préfixe par thread**, identique sur tous ses posts, qui montre qu'on parle de crypto et contient un hashtag très utilisé.
 - **2 hashtags maximum par post** : celui du préfixe et le hashtag de campagne ajouté par le programme ; aucun autre hashtag dans le texte.
+- **Au moins 5 accroches par campagne**, chacune avec son illustration, dans `hooks/` : des réponses à coller à la main sous des posts populaires du même sujet, pour annoncer le thread. Jamais publiées par le bot.
 
 ## Format de `posts.json`
 
@@ -63,7 +64,7 @@ Un objet par campagne, qui dit où en est la publication :
 - `last_posted_at` : date du dernier post publié, au format ISO 8601 (`2026-11-11` ou `2026-11-11T09:30:00Z`) ; `null` si rien n'est encore publié
 - `interval_days` : nombre de jours entre deux posts (`1` = un post par jour, la règle par défaut)
 - `post_time` : heure de publication, au format `HH:MM` en UTC
-- `hashtag` : hashtag unique de la campagne, `#XCK` + 3 lettres du sujet + numéro de campagne (ex. `#XCKbtc1`). Le programme l'ajoute à la fin de chaque post, et il compte dans les 280 caractères. Il est aussi indiqué dans `index.md`
+- `hashtag` : hashtag unique de la campagne, `#XCK` + 3 lettres du sujet + numéro de campagne (ex. `#XCKbtc1`). Le programme l'ajoute à la fin de chaque post, et il compte dans les 500 caractères. Il est aussi indiqué dans `index.md`
 
 Le prochain post (`last_posted_index + 1`) est dû le jour `last_posted_at + interval_days`, à l'heure `post_time`. Pour le premier post d'une campagne, on la passe en `active` et on publie le jour choisi.
 

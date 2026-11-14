@@ -1,0 +1,47 @@
+[
+  {
+    "index": 1,
+    "text": "<what the thread covers + 2-3 standout episodes + invitation>",
+    "card": {
+      "layout": "hero",
+      "title": "<title>"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "<what the thread covers + 2-3 standout episodes + invitation>",
+    "card": {
+      "layout": "list",
+      "title": "<title>"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "<what the thread covers + 2-3 standout episodes + invitation>",
+    "card": {
+      "layout": "question",
+      "title": "<title>"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "<what the thread covers + 2-3 standout episodes + invitation>",
+    "card": {
+      "layout": "chain",
+      "title": "<title>"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "<what the thread covers + 2-3 standout episodes + invitation>",
+    "card": {
+      "layout": "versus",
+      "title": "<title>"
+    },
+    "used": null
+  }
+]

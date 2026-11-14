@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "New daily thread on the math that guards your coins: how one reused number leaked Sony's PS3 key, why most random 12-word phrases are invalid, and what quantum computers really threaten. 76 posts, no math degree needed.",
+    "card": {
+      "title": "The math that guards your coins",
+      "big": "1 nonce",
+      "sub": "reused once, and the key is gone",
+      "items": [
+        "How Sony leaked its PS3 key",
+        "Most 12-word lists are invalid",
+        "The real quantum threat"
+      ],
+      "foot": "76 posts, no math degree needed.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "Signatures, hashes, seed phrases, and the real failures: Android's broken randomness, Milk Sad, vanity addresses gone wrong. I'm explaining the cryptography behind crypto one fact a day in a new thread.",
+    "card": {
+      "title": "From one number to famous failures",
+      "items": [
+        "Your key is a number",
+        "Signatures and Schnorr",
+        "Seed phrase math",
+        "When randomness failed"
+      ],
+      "sub": "The cryptography behind crypto, one fact a day.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "Could a quantum computer steal your bitcoin? Not all coins face the same risk, and quantum-safe signatures already exist. That's where my new daily thread on crypto math ends. It starts with y^2 = x^3 + 7.",
+    "card": {
+      "q": "Which coins face quantum risk?",
+      "sub": "Not all of them. The thread explains why.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "From a single number (your private key) to signatures, Schnorr, seed phrases and the quantum question: I started a daily thread on the cryptography that protects every wallet.",
+    "card": {
+      "title": "From one number to your wallet",
+      "items": [
+        "Private key",
+        "Signatures",
+        "Seed phrases",
+        "Quantum"
+      ],
+      "sub": "The cryptography behind every wallet, one fact a day.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "The math behind Bitcoin has held up since 2009. The code around it hasn't always. My new daily thread covers both: how the cryptography works, and the famous times it was implemented wrong.",
+    "card": {
+      "left": {
+        "label": "The math",
+        "items": [
+          "secp256k1",
+          "SHA-256",
+          "Schnorr signatures"
+        ]
+      },
+      "right": {
+        "label": "Where it failed",
+        "items": [
+          "Reused nonces",
+          "Weak randomness",
+          "Bad vanity keys"
+        ]
+      },
+      "sub": "The math holds, the code fails.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

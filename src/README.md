@@ -13,7 +13,7 @@ Programme C# (.NET 10) qui publie sur X les posts préparés dans `accounts/<Com
 3. Après chaque post : mise à jour de `status.json` (`last_posted_index`, `last_posted_at`) et de `posts.json` (`status: posted`, `posted_at`, `tweet_id`, `url`), puis un commit. Après le dernier post d'une campagne, elle repasse en `inactive`.
 4. `git push` à la fin du passage (avec rebase et nouvel essai si le dépôt a bougé entre-temps).
 
-Un post est **bloqué** (erreur dans le log, la campagne attend) s'il n'est pas `checked`, si la version demandée n'existe pas, ou s'il dépasse 280 caractères tels que X les compte, hashtag de campagne compris. Les autres campagnes continuent.
+Un post est **bloqué** (erreur dans le log, la campagne attend) s'il n'est pas `checked`, si la version demandée n'existe pas, ou s'il dépasse 500 caractères (`MaxWeightedLength`, compte X Premium) tels que X les compte, hashtag de campagne compris. Les autres campagnes continuent.
 
 **Republier un post déjà passé** (par exemple supprimé de X) : dans `posts.json`, mettre son `status` à `republish` et retirer `posted_at`, `tweet_id` et `url`. Au passage suivant, il part tout de suite, à la place du post normal de la campagne pour ce passage (le post normal suit 15 minutes plus tard s'il est dû). Seul `posts.json` est mis à jour : `last_posted_index`, `last_posted_at` et donc le calendrier des posts suivants ne changent pas. Cela ne vaut que pour un index inférieur ou égal à `last_posted_index`.
 
@@ -27,7 +27,7 @@ Avec le hashtag du préfixe, cela fait **2 hashtags par post** : la règle est d
 
 Deux tests vérifient le vrai dépôt, tous comptes confondus, à lancer après avoir écrit une nouvelle campagne :
 
-- `Real_campaigns_all_fit_in_280_with_their_hashtag` : chaque version `simple` tient dans 280 caractères avec le hashtag de campagne ;
+- `Real_campaigns_all_fit_in_500_with_their_hashtag` : chaque version `simple` tient dans 500 caractères avec le hashtag de campagne ;
 - `Real_posts_not_yet_published_have_at_most_two_hashtags` : les versions `simple`, `tech` et `variant` des posts pas encore publiés, hashtag de campagne compris, ont 2 hashtags au plus (la numérotation `#12:` ne compte pas).
 
 ## Compiler
@@ -66,7 +66,7 @@ Toute clé peut aussi venir d'une variable d'environnement `XCK__Section__Cle`, 
 | `DefaultVersion` | `simple` | Version publiée par défaut (`simple`, `tech`, `variant`) ; un post peut la changer avec `"use": "tech"` |
 | `AttachImages` | `true` | Joint `post_N.png` (ou .jpg, .webp, .gif) s'il existe |
 | `AltText` | `true` | Texte alternatif de l'image, tiré de `card` (big, title, sub). Un appel API de plus par image |
-| `MaxWeightedLength` | `280` | Longueur maximale, comptée comme X (URL = 23, « ≈ », « → », emoji = 2) |
+| `MaxWeightedLength` | `500` | Longueur maximale, comptée comme X (URL = 23, « ≈ », « → », emoji = 2) |
 | `DelayBetweenPostsSeconds` | `30` | Pause entre deux posts d'un même passage |
 | `Log.Directory` | `logs` | Dossier des logs, relatif à l'exécutable s'il n'est pas absolu |
 | `Log.RetentionDays` | `30` | Les logs plus vieux sont supprimés |

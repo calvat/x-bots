@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "New daily thread on how blockchains agree without a boss: Proof of Work, Proof of Stake, BFT, and the real attacks that tested them, like Bitcoin Gold's 51% attacks or Ethereum losing finality twice. 54 posts, one a day.",
+    "card": {
+      "title": "How strangers agree",
+      "big": "2/3",
+      "sub": "the threshold most chains need",
+      "items": [
+        "Proof of Work",
+        "Proof of Stake",
+        "BFT and real attacks"
+      ],
+      "foot": "54 posts on consensus, one a day.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "What can a miner with 51% really do? Why does selfish mining pay even below 50%? How did Ethereum stop finalizing, twice? I'm answering one consensus question like these every day in a new thread.",
+    "card": {
+      "title": "The questions behind consensus",
+      "items": [
+        "The Byzantine Generals",
+        "Selfish mining",
+        "51% attacks in the wild",
+        "Slashing and finality"
+      ],
+      "sub": "One consensus idea a day, with real attacks.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "What can an attacker with 51% of the hashrate actually do, and what can't they? Spoiler: less than most people think. One of 54 posts in my new daily thread on blockchain consensus.",
+    "card": {
+      "q": "What can a 51% miner NOT do?",
+      "sub": "Less than most people think.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "From the 1982 Byzantine Generals paper to Bitcoin's Proof of Work, Ethereum's Proof of Stake and the BFT chains: I started a daily thread on how strangers agree on one history.",
+    "card": {
+      "title": "From 1982 to today",
+      "items": [
+        "Byzantine Generals",
+        "Proof of Work",
+        "Proof of Stake",
+        "BFT chains"
+      ],
+      "sub": "How strangers agree on one history.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "PoW vs PoS debates often skip the tradeoffs: electricity vs collateral, slow certainty vs explicit finality, 51% attacks vs slashing. I started a daily thread that lays them out, with real attacks as examples.",
+    "card": {
+      "left": {
+        "label": "Proof of Work",
+        "items": [
+          "Burns electricity",
+          "Never truly final",
+          "51% hashrate attacks"
+        ]
+      },
+      "right": {
+        "label": "Proof of Stake",
+        "items": [
+          "Locks collateral",
+          "Explicit finality",
+          "Slashing for cheats"
+        ]
+      },
+      "sub": "The tradeoffs, with real attacks.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

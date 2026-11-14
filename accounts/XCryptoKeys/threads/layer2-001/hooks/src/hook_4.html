@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;800&family=JetBrains+Mono:wght@500;700&display=block" rel="stylesheet">
+<style>body{margin:0;background:#040823}.t{font-family:'Exo 2',Inter,sans-serif}.m{font-family:'JetBrains Mono',monospace}</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="Inter,sans-serif">
+<defs>
+ <radialGradient id="bg" cx="55%" cy="45%" r="80%"><stop offset="0" stop-color="#10235b"/><stop offset=".55" stop-color="#081039"/><stop offset="1" stop-color="#040823"/></radialGradient>
+ <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#5cfcfa"/><stop offset="1" stop-color="#ad59e9"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172667" stop-opacity=".85"/><stop offset="1" stop-color="#0b2053" stop-opacity=".7"/></linearGradient>
+ <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="60"/></filter>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#2169af" stroke-opacity=".12"/></pattern>
+ <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#5cfcfa"/></marker>
+ <marker id="av" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#ad59e9"/></marker>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/><rect width="1200" height="675" fill="url(#grid)"/>
+<circle cx="300" cy="400" r="170" fill="#2169af" opacity=".35" filter="url(#soft)"/>
+<circle cx="950" cy="350" r="160" fill="#8565e4" opacity=".3" filter="url(#soft)"/>
+<g fill="none" stroke="#46b6e9" stroke-opacity=".3" stroke-width="1.5"><path d="M1200 140H1150L1120 110H1010"/><path d="M0 635H200L225 610H420"/></g>
+<g fill="#5cfcfa" opacity=".6"><circle cx="1010" cy="110" r="3"/><circle cx="420" cy="610" r="3"/></g>
+<text class="m" x="60" y="72" fill="#5cfcfa" font-size="20" font-weight="700" letter-spacing="2" filter="url(#glow)">#LAYER 2 · DAILY THREAD</text>
+<text class="t" x="60" y="122" fill="#eaf6ff" font-size="44" font-weight="800">Four ways to scale</text>
+<path d="M100,330 H1100" stroke="#46b6e9" stroke-width="4" stroke-linecap="round"/>
+<text class="m" x="100" y="300" font-size="15" font-weight="700" fill="#5cfcfa" text-anchor="start" letter-spacing="2">PROVED ON L1</text>
+<text class="m" x="1100" y="300" font-size="15" font-weight="700" fill="#ad59e9" text-anchor="end" letter-spacing="2">OWN CONSENSUS</text>
+<circle cx="180" cy="330" r="14" fill="#5cfcfa" filter="url(#glow)"/>
+<path d="M180,344 V390" stroke="#5cfcfa" stroke-width="2"/>
+<rect x="55" y="390" width="250" height="150" rx="12" fill="#0b2053" stroke="url(#edge)" stroke-width="2.5" filter="url(#glow)"/>
+<text class="t" x="180" y="432" font-size="21" font-weight="800" fill="#eaf6ff" text-anchor="middle">ZK rollup</text>
+<text class="" x="180" y="468" font-size="16" font-weight="500" fill="#8fa8dd" text-anchor="middle">proof checked by an L1</text>
+<text class="" x="180" y="490" font-size="16" font-weight="500" fill="#8fa8dd" text-anchor="middle">contract</text>
+<circle cx="460" cy="330" r="14" fill="#5cfcfa" filter="url(#glow)"/>
+<path d="M460,344 V390" stroke="#5cfcfa" stroke-width="2"/>
+<rect x="335" y="390" width="250" height="150" rx="12" fill="url(#glass)" stroke="#2169af" stroke-width="1.5"/>
+<text class="t" x="460" y="432" font-size="21" font-weight="800" fill="#eaf6ff" text-anchor="middle">Optimistic rollup</text>
+<text class="" x="460" y="468" font-size="16" font-weight="500" fill="#8fa8dd" text-anchor="middle">correct unless</text>
+<text class="" x="460" y="490" font-size="16" font-weight="500" fill="#8fa8dd" text-anchor="middle">challenged in time</text>
+<circle cx="740" cy="330" r="14" fill="#5cfcfa" filter="url(#glow)"/>
+<path d="M740,344 V390" stroke="#5cfcfa" stroke-width="2"/>
+<rect x="615" y="390" width="250" height="150" rx="12" fill="url(#glass)" stroke="#2169af" stroke-width="1.5"/>
+<text class="t" x="740" y="432" font-size="21" font-weight="800" fill="#eaf6ff" text-anchor="middle">Lightning</text>
+<text class="" x="740" y="468" font-size="16" font-weight="500" fill="#8fa8dd" text-anchor="middle">enforced on L1 only in</text>
+<text class="" x="740" y="490" font-size="16" font-weight="500" fill="#8fa8dd" text-anchor="middle">a dispute</text>
+<circle cx="1020" cy="330" r="14" fill="#ad59e9" filter="url(#glow)"/>
+<path d="M1020,344 V390" stroke="#ad59e9" stroke-width="2"/>
+<rect x="895" y="390" width="250" height="150" rx="12" fill="url(#glass)" stroke="#8565e4" stroke-width="1.5" stroke-dasharray="7 6"/>
+<text class="t" x="1020" y="432" font-size="21" font-weight="800" fill="#eaf6ff" text-anchor="middle">Sidechain</text>
+<text class="" x="1020" y="468" font-size="16" font-weight="500" fill="#8fa8dd" text-anchor="middle">its validators hold</text>
+<text class="" x="1020" y="490" font-size="16" font-weight="500" fill="#8fa8dd" text-anchor="middle">the bridge</text>
+<text class="" x="100" y="210" font-size="22" font-weight="600" fill="#eaf6ff" text-anchor="start">Four ways to scale, four different things to trust.</text><text x="60" y="640" font-size="20" fill="#8fa8dd">Readable without being a dev, one fact a day.</text>
+<text class="m" x="1140" y="640" fill="#488fdb" font-size="15" text-anchor="end">@xcryptokeys</text>
+</svg></body></html>

@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "New daily thread on how Ethereum actually works: why part of every fee is burned, how the Merge swapped engines without stopping, what blobs are and why they get deleted. 91 posts, written for non-devs.",
+    "card": {
+      "title": "How Ethereum actually works",
+      "big": "Burned",
+      "sub": "Part of every fee disappears",
+      "items": [
+        "Gas and the EVM",
+        "The Merge",
+        "Blobs for rollups"
+      ],
+      "foot": "91 mechanisms, one a day, for non-devs.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "Ever asked why an Ethereum transaction has no 'from' field, why block size is a vote, or how one user froze the Parity wallets? My new daily thread opens Ethereum's hood one mechanism at a time.",
+    "card": {
+      "title": "Four things Ethereum hides",
+      "items": [
+        "No 'from' field",
+        "Block size is a vote",
+        "The Parity kill switch",
+        "Blobs that expire"
+      ],
+      "sub": "One mechanism a day, sourced from EIPs and specs.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "How did Ethereum switch from mining to staking with no date and no block number set in advance? That's one of 91 mechanisms in my new daily thread, from accounts and gas to blobs.",
+    "card": {
+      "q": "How do you switch engines mid-flight?",
+      "sub": "The Merge had no date and no block number.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "Accounts, then gas and the EVM, then the Merge and staking, then blobs: I'm walking through Ethereum one mechanism a day in a new thread. No dev background needed.",
+    "card": {
+      "title": "Ethereum, layer by layer",
+      "items": [
+        "Accounts",
+        "Gas and EVM",
+        "The Merge",
+        "Blobs"
+      ],
+      "sub": "One mechanism a day, no dev background needed.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "Ethereum's 'SHA-3' isn't SHA-3, its first blocks were empty on purpose, and SELFDESTRUCT lost most of its power. Little surprises like these fill my new daily thread on how Ethereum really works.",
+    "card": {
+      "left": {
+        "label": "Sounds like",
+        "items": [
+          "SHA-3",
+          "Empty blocks = bug",
+          "SELFDESTRUCT deletes"
+        ]
+      },
+      "right": {
+        "label": "Really is",
+        "items": [
+          "The original Keccak",
+          "Empty on purpose",
+          "It lost its teeth"
+        ]
+      },
+      "sub": "Ethereum's quirks, explained one a day.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

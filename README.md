@@ -7,7 +7,7 @@ Bot de publication automatique sur X, pour plusieurs comptes. Le code du bot est
 | Dossier | Contenu |
 |---|---|
 | `src/` | Le programme C# qui publie automatiquement les posts sur X, pour tous les comptes (voir [`src/README.md`](src/README.md)) |
-| `design/` | Les scripts de rendu des images (`card.py`, `render.js`), communs à tous les comptes |
+| `design/` | Les scripts de rendu des images (`diagram.py`, `card.py`, `render.js`), communs à tous les comptes |
 | `accounts/<Compte>/` | Un dossier par compte X : son `README.md`, ses règles (`STYLE.md`, `SUJETS.md`…) et ses campagnes dans `threads/` |
 | `accounts/<Compte>/threads/` | Un dossier par campagne, nommé `<nom technique>-<numéro sur 3 chiffres>`, avec `index.md`, `posts.json` et `status.json` ; `_template/` est le modèle à copier |
 

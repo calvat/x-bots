@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "Your wallet holds keys, not coins. New daily thread on how wallets really work and how people get drained: seed phrases, hardware wallets, approvals, address poisoning. 67 posts, one a day.",
+    "card": {
+      "title": "Not your keys: wallet security",
+      "big": "0 coins",
+      "sub": "inside your wallet: only keys",
+      "items": [
+        "Seed phrases",
+        "Approvals",
+        "Address poisoning"
+      ],
+      "foot": "67 posts on self-custody, one a day.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "Why can translating your seed change your wallet? Why does a restore sometimes show a zero balance? How does address poisoning work? One wallet security fact like these every day in my new thread.",
+    "card": {
+      "title": "How wallets get drained",
+      "items": [
+        "Seed phrases",
+        "Hardware wallets",
+        "Approvals",
+        "Address poisoning"
+      ],
+      "sub": "How wallets work, and how people get drained.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "Restored your seed and saw a zero balance? It's usually the derivation path, not a theft. My new daily thread covers wallet details like this one, and the tricks drainers actually use.",
+    "card": {
+      "q": "Restored your seed, balance zero?",
+      "sub": "Usually the derivation path, not a theft.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "From the 12 words to the keys they create, to what you're really signing, to how drainers empty wallets: I started a daily thread on self-custody, written for non-devs.",
+    "card": {
+      "title": "From 12 words to a drained wallet",
+      "items": [
+        "Seed",
+        "Keys",
+        "Signing",
+        "Drainers"
+      ],
+      "sub": "Self-custody, written for non-devs.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "Free to sign doesn't mean safe to sign. Checking the first and last characters isn't enough. I'm sharing one wallet security lesson like these every day in a new thread, drawn from real thefts.",
+    "card": {
+      "left": {
+        "label": "Feels safe",
+        "items": [
+          "Free to sign",
+          "First and last chars match",
+          "It's a hardware wallet"
+        ]
+      },
+      "right": {
+        "label": "Gets you drained",
+        "items": [
+          "Signed approvals",
+          "Address poisoning",
+          "Blind signing"
+        ]
+      },
+      "sub": "Lessons drawn from real thefts.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

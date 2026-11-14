@@ -14,7 +14,7 @@ public sealed class Settings
     public bool AttachImages { get; set; } = true;
     /// <summary>Pose le texte alternatif des images (un appel API de plus par image).</summary>
     public bool AltText { get; set; } = true;
-    public int MaxWeightedLength { get; set; } = 280;
+    public int MaxWeightedLength { get; set; } = 500;
     public int DelayBetweenPostsSeconds { get; set; } = 30;
     public LogSettings Log { get; set; } = new();
     public GitSettings Git { get; set; } = new();

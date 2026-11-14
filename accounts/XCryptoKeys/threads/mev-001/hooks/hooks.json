@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "What happens between clicking Send and your transaction landing in a block? Bots, builders, relays and sandwiches. New daily thread on MEV: who profits, how, and how to protect yourself. 52 posts.",
+    "card": {
+      "title": "The dark forest: MEV explained",
+      "big": "12 s",
+      "sub": "for bots to act on your trade",
+      "items": [
+        "Front-running",
+        "Sandwich attacks",
+        "Builders and relays"
+      ],
+      "foot": "52 posts, one a day.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "Front-running, sandwich attacks, just-in-time liquidity, gas wars, private RPCs: I'm explaining the hidden market around every Ethereum transaction, one post a day, in a new thread.",
+    "card": {
+      "title": "What happens to your swap",
+      "items": [
+        "Front-running",
+        "Sandwich attacks",
+        "Builders and relays",
+        "How to protect yourself"
+      ],
+      "sub": "The hidden market around every transaction.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "Did you know your slippage setting is a bot's budget? Sandwich bots read pending swaps and squeeze them. My new daily thread on MEV explains how it works, and what actually protects you.",
+    "card": {
+      "q": "Who saw your swap before it landed?",
+      "sub": "Bots read the public mempool.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "Send, mempool, searcher, builder, relay, proposer: your transaction passes through a lot of hands before it lands. I started a daily thread following that path, one step at a time.",
+    "card": {
+      "title": "The path of your transaction",
+      "items": [
+        "You click Send",
+        "Public mempool",
+        "Builder",
+        "Block"
+      ],
+      "sub": "Every step is a chance for MEV.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "Your pending transaction is public, its place in the block is for sale, and bots compete to profit from it. I'm explaining this dark forest one post a day in a new MEV thread.",
+    "card": {
+      "left": {
+        "label": "You assume",
+        "items": [
+          "My tx is private",
+          "First come, first served",
+          "Fees are all I pay"
+        ]
+      },
+      "right": {
+        "label": "In reality",
+        "items": [
+          "Anyone can read it",
+          "Order is for sale",
+          "Bots take a cut"
+        ]
+      },
+      "sub": "The dark forest, one post a day.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

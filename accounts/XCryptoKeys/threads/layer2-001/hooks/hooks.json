@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "Layer 2 is a label, not a guarantee. New daily thread on what Lightning, rollups and sidechains really promise: who can censor you, who holds the upgrade keys, how long an exit takes. 67 posts, one a day.",
+    "card": {
+      "title": "Scaling without breaking",
+      "big": "L2",
+      "sub": "a label, not a guarantee",
+      "items": [
+        "Who can censor you",
+        "Who holds upgrade keys",
+        "How long an exit takes"
+      ],
+      "foot": "67 posts on Lightning, rollups and sidechains.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "How does Lightning punish a cheater? Why can leaving an optimistic rollup take a week? What is a sequencer still allowed to do? One question like this every day in my new Layer 2 thread.",
+    "card": {
+      "title": "What every Layer 2 user should know",
+      "items": [
+        "Lightning channels",
+        "Optimistic rollups",
+        "ZK rollups",
+        "Exits and upgrade keys"
+      ],
+      "sub": "One Layer 2 fact a day.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "Can a rollup's sequencer censor you? Can someone upgrade the contracts holding your funds? My new daily thread on Layer 2s answers questions like these, from Lightning to ZK rollups.",
+    "card": {
+      "q": "Can your Layer 2 lock you out?",
+      "sub": "Sequencers, upgrade keys, exit windows.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "Lightning, sidechains, optimistic rollups, ZK rollups: they scale differently and trust different things. I started a daily thread comparing them one fact at a time, readable without being a dev.",
+    "card": {
+      "title": "Four ways to scale",
+      "items": [
+        "Lightning",
+        "Sidechains",
+        "Optimistic rollups",
+        "ZK rollups"
+      ],
+      "sub": "What each one trusts, one fact a day.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "'Secured by Ethereum' can mean very different things. I started a daily thread on what each Layer 2 really guarantees, what it doesn't, and how to check it yourself.",
+    "card": {
+      "left": {
+        "label": "The pitch",
+        "items": [
+          "Secured by Ethereum",
+          "Instant and final",
+          "Unstoppable"
+        ]
+      },
+      "right": {
+        "label": "What to check",
+        "items": [
+          "Who can upgrade it",
+          "When it is final",
+          "Who sequences it"
+        ]
+      },
+      "sub": "What a Layer 2 really guarantees.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "Daily thread on how Pactus works, checked against the code: a fixed 42M PAC supply, 10-second blocks, a lottery for the validator committee, flat fees with no auction. 90 posts, one a day. @PactusChain",
+    "card": {
+      "title": "Inside Pactus",
+      "big": "42M PAC",
+      "sub": "all created at launch",
+      "items": [
+        "10-second blocks",
+        "A committee lottery",
+        "Flat fees, no auction"
+      ],
+      "foot": "90 posts, verified in the code.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "How does Pactus pick validators without a vote? Why is there no chain ID? Why flat fees instead of an auction? I'm answering one question like these every day in a thread straight from the source code.",
+    "card": {
+      "title": "What makes Pactus tick",
+      "items": [
+        "Supply and rewards",
+        "Committee lottery",
+        "Consensus",
+        "Networking"
+      ],
+      "sub": "One mechanism a day, from the source code.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "Pactus doesn't elect validators: after each block, every validator runs a private lottery for a committee seat, and anyone can check the draw. One of 90 posts in my daily Inside Pactus thread.",
+    "card": {
+      "q": "Validators without a vote?",
+      "sub": "A lottery anyone can check.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "From the supply and block format to the committee lottery, staking, consensus, keys and networking: I'm going through Pactus one mechanism a day, verified in the code. 90 posts.",
+    "card": {
+      "title": "Pactus, end to end",
+      "items": [
+        "Supply",
+        "Blocks",
+        "Committee",
+        "Consensus"
+      ],
+      "sub": "One mechanism a day, verified in the code.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "No fee auction, no inflation, no elected validators: Pactus does several things differently. I'm explaining each design choice in a daily thread, checked against the code. @PactusChain",
+    "card": {
+      "left": {
+        "label": "Common designs",
+        "items": [
+          "Fee auctions",
+          "Elected validators",
+          "New coins minted"
+        ]
+      },
+      "right": {
+        "label": "Pactus",
+        "items": [
+          "Flat fees",
+          "Lottery seats",
+          "Fixed supply"
+        ]
+      },
+      "sub": "Pactus design choices, one a day.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

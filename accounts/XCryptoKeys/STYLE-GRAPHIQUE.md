@@ -6,6 +6,13 @@ Exemples : [threads/pactus-001/post_6.png](threads/pactus-001/post_6.png) (sché
 Le but : qu'on reconnaisse un visuel @xcryptokeys au premier coup d'œil dans le fil X.
 Ambiance « réseau la nuit » : fond bleu nuit profond, traits néon cyan → violet, effet verre, pistes de circuit et bribes de code en fond.
 
+## Règles des illustrations (obligatoires)
+
+1. **Coller au message.** L'image illustre ce que dit *ce* post : son mécanisme, son chiffre, sa chronologie, sa comparaison. On part du texte (`long`) et on se demande quel dessin l'explique le mieux (une courbe pour une formule de prix, une frise pour un incident, un arbre pour une dérivation de clés, un réseau pour un quorum…), pas quel gabarit est le plus rapide.
+2. **Varier.** Pas toujours la même forme (fini les carrés et cubes à droite sur chaque post). Le modèle à suivre est [threads/pactus-001/post_6.png](threads/pactus-001/post_6.png) : un schéma fait pour ce post-là. Dans une campagne, éviter trois posts de suite avec le même type de schéma.
+3. **Jamais deux fois la même illustration dans une campagne** (règle de sécurité). Chaque post a son propre schéma, avec ses propres textes et données. `design/diagram.py` le vérifie : il refuse de générer une campagne où deux schémas sont identiques, et signale ceux qui se ressemblent trop ou trois types identiques de suite.
+4. **Rien d'inventé.** Pas de chiffre d'exemple ni de détail absent du post. Si un dessin a besoin d'un nombre que le post ne donne pas, on change de dessin (sans axe chiffré, ou un autre type).
+
 ## Palette
 
 | Rôle | Couleur | Usage |
@@ -56,9 +63,40 @@ L'image ne doit rien affirmer de plus que le post (`long`, `tech`, `simple`). Un
 
 - Chaque post a une image : `threads/<campagne>/post_N.png` (dans `accounts/XCryptoKeys/`) (numéro sans zéro devant : post_1, post_12, post_105).
 - Sa source : `threads/<campagne>/src/post_N.html`.
-- **Carte simple** (par défaut) : générée depuis le champ `card` du post (`title`, `sub`, `big` optionnel) :
-  `python3 design/card.py accounts/XCryptoKeys/threads/<campagne> [index ...] --png` (depuis la racine du dépôt ; la signature `@xcryptokeys` et les préfixes viennent de [`card.json`](card.json))
-- **Schéma sur mesure** (quand un dessin explique mieux) : écrire `src/post_N.html` à la main en partant de `threads/pactus-001/src/post_6.html`, puis
+- **Schéma sur mesure (par défaut)** : décrit dans `threads/<campagne>/visuals.json` (une entrée par numéro de post), puis
+  `python3 design/diagram.py accounts/XCryptoKeys/threads/<campagne> [index ...] --png` (depuis la racine du dépôt).
+  Le script écrit `src/post_N.html` (marque `auto-diagram`), rend les PNG, signale tout texte qui déborde (« ATTENTION ») et applique la règle anti-doublon (« ERREUR » = rien n'est généré, « AVERTISSEMENT » = à revoir).
+  Il n'écrase jamais un fichier écrit à la main, et card.py n'écrase jamais ses fichiers.
+- **Schéma écrit à la main** (quand aucun type ne convient) : écrire `src/post_N.html` en partant de `threads/pactus-001/src/post_6.html`, puis
   `node design/render.js accounts/XCryptoKeys/threads/<campagne>/src/post_N.html`.
-  card.py ne l'écrase jamais.
+- **Carte simple** (`design/card.py`, depuis le champ `card` du post) : seulement pour un post sans schéma possible ; elle ne respecte pas à elle seule la règle « coller au message ».
+- **Accroches** : un **dessin sur mesure** par accroche, écrit à la main dans `threads/<campagne>/hooks/src/hook_N.html` en partant de `threads/pactus-001/src/post_6.html`. Il montre ce que dit le texte de l'accroche (son mécanisme, son affaire, son chiffre). **Jamais deux fois la même illustration dans une campagne**, ni entre accroches ni avec les images des posts. Les 5 mises en page automatiques (`hero`, `list`, `question`, `chain`, `versus`, champ `card` de `hooks/hooks.json`) ne sont qu'un brouillon ; card.py n'écrase jamais un dessin sur mesure. Rendu des images et de `HOOKS.md` :
+  `python3 design/card.py accounts/XCryptoKeys/threads/<campagne> --hooks --png` → `threads/<campagne>/hooks/hook_N.png`.
 - Rendu : Playwright + Chromium (`npm i playwright`).
+
+## Types de schéma (visuals.json)
+
+Champs communs : `title` (sinon `card.title` du post), `note` `{k, v}` (carte « idée clé » en bas). Une boîte = `{k, label, big, lines, sub}` + drapeaux `hl` (mise en avant cyan), `alt` (pointillé violet), `bad` (alerte violet), `dim`. Dans les textes, `**x**` = gras cyan, `` `x` `` = mono.
+
+| Type | Pour | Champs principaux |
+|---|---|---|
+| `flow` | une suite d'étapes A → B → C | `steps` [boîtes], `loop` |
+| `split` | une source qui mène à 2–4 issues | `src`, `to` [boîtes], `reverse` |
+| `compare` | deux options face à face | `left`/`right` `{head, big, items, hl}` |
+| `stack` | des couches empilées | `head`, `layers` [`{label, r}`], `side` |
+| `segments` | une barre découpée en parts | `items` [`{label, value, display}`], `total`, `cards`, `legend` |
+| `timeline` | une chronologie, une fenêtre de temps | `events` [`{t, label, sub, at}`], `span` `[a, b, libellé]`, `alternate`, `w` |
+| `bars` | des grandeurs comparées | `items` [`{label, value, display}`], `log` |
+| `formula` | une formule et ses termes | `k`, `expr`, `terms` [`{k, v}`], `foot` |
+| `fields` | une structure de données, champ par champ | `struct` `{name, lines}`, `side` (avec `from` = ligne pointée) |
+| `cycle` | une boucle | `nodes`, `center` |
+| `tree` | un arbre (Merkle, dérivation de clés) | `leaves`, `root`, `inner`, `hl`, `side` |
+| `network` | un réseau, un quorum, des nœuds | `nodes`, `hl`, `bad`, `cluster`, `*_label`, `side` |
+| `gauge` | une proportion sur un cercle | `pct`, `mark`, `big`, `label`, `side` |
+| `checklist` | ce qui passe / ne passe pas | `checks` [`{text, ok, sub}`], `side` |
+| `hash` | des entrées → une fonction → une sortie | `fn`, `fn_k`, `inputs`, `out` |
+| `chain` | des blocs chaînés, une fourche | `blocks`, `branch` `{at, blocks}` |
+| `steps` | une procédure numérotée | `steps` [`{label, sub}`], `side` |
+| `table` | un petit tableau | `head`, `rows`, `cols`, `hl_col` (✓ / ✗ deviennent des icônes) |
+| `curve` | une courbe y = f(x) (AMM, perte, taux) | `curves` [`{expr, label, hl}`], `xr`, `yr`, `points`, `vlines`, `xl`, `yl` |
+| `big` | un chiffre clé | `k`, `big`, `label`, `side` |

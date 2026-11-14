@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;800&family=JetBrains+Mono:wght@500;700&display=block" rel="stylesheet">
+<style>body{margin:0;background:#040823}.t{font-family:'Exo 2',Inter,sans-serif}.m{font-family:'JetBrains Mono',monospace}</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="Inter,sans-serif">
+<defs>
+ <radialGradient id="bg" cx="55%" cy="45%" r="80%"><stop offset="0" stop-color="#10235b"/><stop offset=".55" stop-color="#081039"/><stop offset="1" stop-color="#040823"/></radialGradient>
+ <linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#5cfcfa"/><stop offset="1" stop-color="#ad59e9"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#172667" stop-opacity=".85"/><stop offset="1" stop-color="#0b2053" stop-opacity=".7"/></linearGradient>
+ <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="60"/></filter>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#2169af" stroke-opacity=".12"/></pattern>
+ <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#5cfcfa"/></marker>
+ <marker id="av" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#ad59e9"/></marker>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/><rect width="1200" height="675" fill="url(#grid)"/>
+<circle cx="250" cy="420" r="170" fill="#2169af" opacity=".35" filter="url(#soft)"/>
+<circle cx="1000" cy="200" r="160" fill="#8565e4" opacity=".3" filter="url(#soft)"/>
+<g fill="none" stroke="#46b6e9" stroke-opacity=".3" stroke-width="1.5"><path d="M1200 140H1150L1120 110H1010"/><path d="M0 635H200L225 610H420"/></g>
+<g fill="#5cfcfa" opacity=".6"><circle cx="1010" cy="110" r="3"/><circle cx="420" cy="610" r="3"/></g>
+<text class="m" x="60" y="72" fill="#5cfcfa" font-size="20" font-weight="700" letter-spacing="2" filter="url(#glow)">#BITCOIN INTERNALS · DAILY THREAD</text>
+<text class="t" x="60" y="122" fill="#eaf6ff" font-size="44" font-weight="800">From genesis to Taproot</text>
+<path d="M187,330 H1012" stroke="#46b6e9" stroke-width="3" filter="url(#glow)"/>
+<circle cx="187" cy="330" r="14" fill="#0b2053" stroke="#5cfcfa" stroke-width="3" filter="url(#glow)"/>
+<text class="t" x="187" y="290" font-size="40" font-weight="800" fill="#5cfcfa" text-anchor="middle">2009</text>
+<rect x="60" y="380" width="255" height="190" rx="12" fill="url(#glass)" stroke="#2169af" stroke-width="1.5"/>
+<text class="t" x="80" y="420" font-size="23" font-weight="800" fill="#eaf6ff" text-anchor="start">Satoshi sends 10</text>
+<text class="t" x="80" y="450" font-size="23" font-weight="800" fill="#eaf6ff" text-anchor="start">BTC to Hal</text>
+<text class="" x="80" y="510" font-size="17" font-weight="400" fill="#8fa8dd" text-anchor="start">block 170: first transfer</text>
+<text class="" x="80" y="536" font-size="17" font-weight="400" fill="#8fa8dd" text-anchor="start">between people</text>
+<circle cx="462" cy="330" r="14" fill="#0b2053" stroke="#ad59e9" stroke-width="3" filter="url(#glow)"/>
+<text class="t" x="462" y="290" font-size="40" font-weight="800" fill="#ad59e9" text-anchor="middle">2017</text>
+<rect x="335" y="380" width="255" height="190" rx="12" fill="url(#glass)" stroke="#2169af" stroke-width="1.5"/>
+<text class="t" x="355" y="420" font-size="23" font-weight="800" fill="#eaf6ff" text-anchor="start">SegWit</text>
+<text class="" x="355" y="480" font-size="17" font-weight="400" fill="#8fa8dd" text-anchor="start">signatures moved aside,</text>
+<text class="" x="355" y="506" font-size="17" font-weight="400" fill="#8fa8dd" text-anchor="start">txid malleability fixed</text>
+<circle cx="737" cy="330" r="14" fill="#0b2053" stroke="#5cfcfa" stroke-width="3" filter="url(#glow)"/>
+<text class="t" x="737" y="290" font-size="40" font-weight="800" fill="#5cfcfa" text-anchor="middle">2021</text>
+<rect x="610" y="380" width="255" height="190" rx="12" fill="#0b2053" stroke="url(#edge)" stroke-width="2.5" filter="url(#glow)"/>
+<text class="t" x="630" y="420" font-size="23" font-weight="800" fill="#eaf6ff" text-anchor="start">Taproot</text>
+<text class="" x="630" y="480" font-size="17" font-weight="400" fill="#8fa8dd" text-anchor="start">Schnorr signatures, hidden</text>
+<text class="" x="630" y="506" font-size="17" font-weight="400" fill="#8fa8dd" text-anchor="start">spending rules</text>
+<circle cx="1012" cy="330" r="14" fill="#0b2053" stroke="#ad59e9" stroke-width="3" filter="url(#glow)"/>
+<text class="t" x="1012" y="290" font-size="40" font-weight="800" fill="#ad59e9" text-anchor="middle">2023</text>
+<rect x="885" y="380" width="255" height="190" rx="12" fill="url(#glass)" stroke="#2169af" stroke-width="1.5"/>
+<text class="t" x="905" y="420" font-size="23" font-weight="800" fill="#eaf6ff" text-anchor="start">Biggest block</text>
+<text class="" x="905" y="480" font-size="17" font-weight="400" fill="#8fa8dd" text-anchor="start">about 3.96 MB, mostly one</text>
+<text class="" x="905" y="506" font-size="17" font-weight="400" fill="#8fa8dd" text-anchor="start">image</text><text x="60" y="640" font-size="20" fill="#8fa8dd">Bitcoin&#x27;s protocol story, one consensus rule at a time.</text>
+<text class="m" x="1140" y="640" fill="#488fdb" font-size="15" text-anchor="end">@xcryptokeys</text>
+</svg></body></html>

@@ -17,3 +17,4 @@ Notes avant publication :
 
 - `posts.json` : les 52 posts de la campagne, dans l'ordre de publication. Chaque entrée a `index`, `simple`, `tech`, `source` et `status`, et parfois `variant` (une 3e version).
 - `status.json` : l'avancement de la publication (`status` actif ou inactif, `last_posted_index` et `last_posted_at` du dernier post publié). Format dans le README.
+- `hooks/` : 5 accroches (réponses à coller à la main sous des posts populaires), chacune avec son image. Liste à copier : [hooks/HOOKS.md](hooks/HOOKS.md).

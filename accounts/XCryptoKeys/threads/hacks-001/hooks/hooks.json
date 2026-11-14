@@ -1,0 +1,85 @@
+[
+  {
+    "index": 1,
+    "text": "New daily thread dissecting the biggest crypto hacks: the DAO, Ronin, Wormhole, Bybit and more. Not how much was stolen, but the one line of code or the one key that failed. 52 heists, one a day.",
+    "card": {
+      "title": "Anatomy of a crypto heist",
+      "big": "52",
+      "sub": "heists, one autopsy a day",
+      "items": [
+        "The DAO, 2016",
+        "Ronin and Wormhole, 2022",
+        "Bybit, 2025"
+      ],
+      "foot": "Not how much was taken, but what failed.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "The DAO paid out before updating its books. Ronin fell to one phished employee. Wormhole skipped one check and minted 120,000 wETH from nothing. I'm dissecting one crypto hack like this every day in a new thread.",
+    "card": {
+      "title": "What really failed",
+      "items": [
+        "DAO: paid, then updated",
+        "Ronin: one phished employee",
+        "Wormhole: one missing check",
+        "Bybit: a screen that lied"
+      ],
+      "sub": "One crypto hack explained every day.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "How do you steal $1.5B from a cold wallet without ever stealing its keys? Bybit found out in February 2025. That's one of 52 crypto heists I'm taking apart, one a day, in a new thread.",
+    "card": {
+      "q": "How do you rob a cold wallet without its keys?",
+      "sub": "Bybit, February 2025. One of 52 autopsies.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "From The DAO in 2016 to Ronin, Wormhole and Bybit: I started a daily thread retracing a decade of crypto heists, explained technically but readable without being a dev.",
+    "card": {
+      "title": "A decade of crypto heists",
+      "items": [
+        "The DAO 2016",
+        "Ronin 2022",
+        "Wormhole 2022",
+        "Bybit 2025"
+      ],
+      "sub": "Explained technically, readable without being a dev.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "People think crypto hacks mean someone broke the cryptography. Almost never: it's a forgotten check, a leaked key, a fake job offer, a tampered screen. My new daily thread shows what really failed, case by case.",
+    "card": {
+      "left": {
+        "label": "What people think",
+        "items": [
+          "The math was broken",
+          "The blockchain was hacked"
+        ]
+      },
+      "right": {
+        "label": "What really failed",
+        "items": [
+          "A forgotten check",
+          "A leaked key",
+          "A tampered screen"
+        ]
+      },
+      "sub": "One hack autopsy a day.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

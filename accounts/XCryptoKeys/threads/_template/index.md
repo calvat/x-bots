@@ -14,3 +14,4 @@ Notes avant publication :
 
 - `posts.json` : les posts de la campagne, dans l'ordre de publication. Chaque entrée a `index`, `long`, `tech`, `simple`, `source` et `status`, et parfois `variant` (une 3e version).
 - `status.json` : l'avancement de la publication (`status` actif ou inactif, `last_posted_index` et `last_posted_at` du dernier post publié). Format dans le README.
+- `hooks/hooks.json` : au moins 5 accroches (réponses à coller sous des posts populaires), chacune avec son illustration. `HOOKS.md` et les images `hook_N.png` en sont générés par `design/card.py --hooks --png`. Règles dans `STYLE.md`.

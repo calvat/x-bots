@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "Starting a daily thread on Bitcoin's real rules, straight from the code: why the 21M cap isn't exact, the 2010 bug that minted 184 billion BTC, coins nobody can ever spend. 71 posts, one a day. Worth a follow if you hold BTC.",
+    "card": {
+      "title": "Bitcoin's rules, line by line",
+      "big": "184 billion",
+      "sub": "BTC minted by one bug in 2010",
+      "items": [
+        "The cap isn't exactly 21M",
+        "Coins nobody can spend",
+        "A clock allowed to run fast"
+      ],
+      "foot": "71 protocol rules and quirks, one a day.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "Ever wondered what a miner actually hashes, why difficulty can never jump wildly, or why some addresses start with 3? I'm answering one question like that every day in a new thread on Bitcoin's internals.",
+    "card": {
+      "title": "What the thread opens up",
+      "items": [
+        "What a miner really hashes",
+        "Why difficulty can't jump",
+        "The time warp bug",
+        "Why addresses start with 3"
+      ],
+      "sub": "One rule a day, sourced from the code and the BIPs.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "The first Bitcoin block holds a newspaper headline, and its 50 BTC reward can never be spent. Do you know why? My new daily thread goes from the genesis block to Taproot, one protocol rule at a time.",
+    "card": {
+      "q": "Why can the first 50 BTC never be spent?",
+      "sub": "The answer is in the thread, with 70 other rules.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "From Satoshi's first transfer to Hal, through SegWit and the biggest block ever (mostly one image), to Taproot: I'm telling Bitcoin's protocol story one rule a day in a new thread.",
+    "card": {
+      "title": "From genesis to Taproot",
+      "items": [
+        "Genesis block",
+        "SegWit",
+        "Inscriptions",
+        "Taproot"
+      ],
+      "sub": "The protocol story, told one consensus rule at a time.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "Most people assume Bitcoin has accounts, a fee field and an exact 21M cap. It has none of them. I started a daily thread on how Bitcoin really works under the hood, one rule a day.",
+    "card": {
+      "left": {
+        "label": "What people assume",
+        "items": [
+          "Accounts and balances",
+          "A fee field",
+          "Exactly 21M coins"
+        ]
+      },
+      "right": {
+        "label": "What the code says",
+        "items": [
+          "Only unspent coins",
+          "Fee = inputs - outputs",
+          "Just under 21M"
+        ]
+      },
+      "sub": "Bitcoin, line by line: one rule a day.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]

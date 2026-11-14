@@ -1,0 +1,86 @@
+[
+  {
+    "index": 1,
+    "text": "Is crypto anonymous? New daily thread on how blockchain tracing really works, how Silk Road and Bitfinex coins were followed for years, and what mixers, Monero and Zcash actually hide. 67 posts.",
+    "card": {
+      "title": "Is crypto really anonymous?",
+      "big": "1 address",
+      "sub": "can link your whole history",
+      "items": [
+        "How tracing works",
+        "Silk Road and Bitfinex",
+        "Mixers, Monero, Zcash"
+      ],
+      "foot": "67 posts on crypto privacy, one a day.",
+      "layout": "hero"
+    },
+    "used": null
+  },
+  {
+    "index": 2,
+    "text": "How did investigators trace Bitfinex coins for years? Why did Tornado Cash end up in court? What does Monero hide that Bitcoin doesn't? I'm covering one question like these every day in a new thread.",
+    "card": {
+      "title": "How your coins get traced",
+      "items": [
+        "How tracing works",
+        "Famous cases",
+        "Mixers and CoinJoin",
+        "Monero and Zcash"
+      ],
+      "sub": "Crypto privacy, from myth to math.",
+      "layout": "list"
+    },
+    "used": null
+  },
+  {
+    "index": 3,
+    "text": "Is Bitcoin anonymous? No, it's pseudonymous, and the difference matters. My new daily thread shows how addresses get linked to people, and what real privacy takes.",
+    "card": {
+      "q": "Is Bitcoin anonymous?",
+      "sub": "No. Pseudonymous. The difference matters.",
+      "layout": "question"
+    },
+    "used": null
+  },
+  {
+    "index": 4,
+    "text": "How tracers link addresses, the cases they cracked, the mixers and their trials, then Monero and Zcash: I started a daily thread on privacy in crypto, from myth to math.",
+    "card": {
+      "title": "From myth to math",
+      "items": [
+        "Tracing",
+        "Real cases",
+        "Mixers",
+        "Privacy coins"
+      ],
+      "sub": "Privacy in crypto, one post a day.",
+      "layout": "chain"
+    },
+    "used": null
+  },
+  {
+    "index": 5,
+    "text": "Bitcoin is anonymous, mixers erase the trail, privacy is only for criminals: three myths my new daily thread takes apart, with real cases and the actual techniques.",
+    "card": {
+      "left": {
+        "label": "Myth",
+        "items": [
+          "Bitcoin is anonymous",
+          "Mixers erase the trail",
+          "Privacy is for crime"
+        ]
+      },
+      "right": {
+        "label": "Reality",
+        "items": [
+          "Every payment is public",
+          "Trails get rebuilt",
+          "Honest users need it"
+        ]
+      },
+      "sub": "Crypto anonymity myths, one a day.",
+      "layout": "versus"
+    },
+    "used": null
+  }
+]
