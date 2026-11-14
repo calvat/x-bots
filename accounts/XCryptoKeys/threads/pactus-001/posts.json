@@ -42,7 +42,10 @@
       "sub": "Paid from the 21M PAC treasury, lasting until around block 44M."
     },
     "source": "pactus code: state/param/param.go (RewardCoefficient, BlockReward)",
-    "status": "checked"
+    "status": "posted",
+    "posted_at": "2026-11-14T07:00:01Z",
+    "tweet_id": "2121498367553384890",
+    "url": "https://x.com/xcryptokeys/status/2121498367553384890"
   },
   {
     "index": 4,
